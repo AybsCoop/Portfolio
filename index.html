@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section id="hero">
+    <div class="overlay"></div>
+    <video autoplay loop muted disablePictureInPicture src="Videos/ClumsyThief.webm" style="height: auto; width: 100%;"></video>
+    
+    <h3 style="position: absolute; top: 90%; left: 1%; z-index: 0;">
+      <a href="https://ayoub-nasr.itch.io/tiny-thieves" style="color: inherit;">Clumsy Thief Demo</a>
+    </h3>
+    <div class="hero-content">
+      <h1>Hi, I'm Ayoub Nasr</h1>
+      <p>Developer | Designer | Artist</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <p>I’m a developer, game designer, and artist with a lifelong passion for technology. Since childhood, I’ve been captivated by the intersection of creativity and tech, which led me to explore software development and algorithm optimization. I specialize in C, C++, and JavaScript, with projects like an AI-driven Battleship game, graph-based applications, and a dynamic to-do list webpage.
+
+        I focus on algorithms and problem-solving, always looking at challenges from new perspectives to uncover hidden solutions and more efficient methods. My interests also lie in computer graphics and parallel computing, where I aim to push the boundaries of performance and visual quality.
+        
+        I’m dedicated to continuous learning, combining technical excellence with creativity to create impactful solutions.</p>
+    </div>
+  </section>
+
+    <section id="skills">
+        <div class="skills-content">
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/html.png" alt="HTML" class="skill-logo" />
+            </div>
+            <p>90%</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/JS.png" alt="Javascript" class="skill-logo" />
+            </div>
+            <p>80%</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/C++.png" alt="C++" class="skill-logo" />
+            </div>
+            <p>70%</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/C.png" alt="C" class="skill-logo" />
+            </div>
+            <p>90%</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/Csharp.png" alt="C#" class="skill-logo" />
+            </div>
+            <p>80%</p>
+        </div>
+        <div class="skill-item">
+            <div class="skill-circle">
+            <img src="Images/java.png" alt="Java" class="skill-logo" />
+            </div>
+            <p>60%</p>
+        </div>
+        </div>
+    </section>
+  
+    <!-- Secondary Skills Section with Sliders 
+    <section class="skill-bars">
+        <div class="skill-bar">
+            <h3>Web Development</h3>
+            <div class="slider">
+                <div class="fill webdev" style="width: 60%"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>Game Development</h3>
+            <div class="slider">
+                <div class="fill gamedev" style="width: 75%"></div>
+            </div>
+        </div>
+        <div class="skill-bar">
+            <h3>Data Structures</h3>
+            <div class="slider">
+                <div class="fill art" style="width: 75%"></div>
+            </div>
+        </div>
+    </section>
+  -->
+
+
+  <section id="projects" class="section">
+    <div class="section-title">
+      <h2>My Work</h2>
+    </div>
+    <div class="project-gallery">
+      <a href="#battleShipExpandable" class="project-item">
+        <img src="BattleShip_Images/BattleShip_Thumbnail.png" style="height: 100%; width: 100%;" alt="Project 1">
+        <div class="overlay-text">
+          <h3>BattleShip</h3>
+          <p>This is a team project Battleship PVP/PVE game implemented in C for CMPS 270 at the American University of Beirut.</p>
+        </div>
+      </a>
+
+      <a href="#clumsyThiefExpandable" class="project-item">
+        <img src="ClumsyThief_Images/ClumsyThief_Thumbnail.png" alt="Project 3">
+        <div class="overlay-text">
+          <h3>Clumsy Thieves</h3>
+          <p>A puzzle/strategy game where you play as a thief.</p>
+        </div>
+      </a>
+      <a href="#websiteBldrExpandable" class="project-item">
+        <img src="WebsiteBuilder_Images/WebsiteBuilder_Thumbnail.png" alt="Project 2">
+        <div class="overlay-text">
+          <h3>Website Builder</h3>
+          <p>Coding websites from scratch is painful and repetitive. This is a website builder I've been working on
+            with advanced capabilities and a simple intuitive interface to make web development fast and easy.
+          </p>
+        </div>
+      </a>
+      <div class="project-item">
+        <img src="TaskManager_Images/TaskManager_Thumbnail.png" style="height: 100%;" alt="Project 3">
+        <div class="overlay-text">
+          <h3>Student-Friendly Task Manager</h3>
+          <p>An advanced to-do list platform aimed at helping students manage tasks effectively, 
+            reduce stress, and stay motivated through an engaging and user-friendly interface.
+          </p>
+        </div>
+      </div>
+
+      <!--
+      <div class="project-item">
+        <img src="Images/tst3.png" alt="Project 3">
+        <div class="overlay-text">
+          <h3>Side Project: Steganography</h3>
+          <p>A short description of this amazing project.</p>
+        </div>
+      </div>
+
+    -->
+      
+      
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-title">
+      <h2>Get in Touch</h2>
+    </div>
+    <form action="#" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+
+  <!--BattleShip Expandable Content-->
+  <div id="battleShipExpandable">
+    
+    <div id="expandableContent">
+
+      <h1 id="header0"><br>BattleShip</h1>
+      <p>Battleship is a classic strategy game where players take turns guessing the locations of their opponent's ships on a grid. 
+        The goal is to sink all of the enemy's ships before they sink yours. With a combination of logic, deduction, and chance, each turn brings you closer to victory—or defeat!
+      </p>
+
+      <h2><br>Key Chapters:</h2>
+      
+
+      <ul style="padding-left: 60px;">
+        <li>
+          <a id="aref" href="#header1">Forward-looking Development</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header2">The Bot: An Introduction</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header3">Efficiency Through Data Structures</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header4">Risk: A Second Dimension</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header6">The Bot's Brain</a>
+        </li>
+
+      </ul>
+
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header1">Forward-Looking Development</h2>
+      <p style="font-size: larger;"><br><br>
+      ...
+        <br><br>
+      </p>
+      
+      <img src="BattleShip_Images/1.png" alt="">
+      <img src="BattleShip_Images/2.png" alt="">
+      <img src="BattleShip_Images/3.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header2">The Bot: Introduction</h2>
+      <p style="font-size: larger;"><br><br>
+      ...
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/4.png" alt="">
+      <img src="BattleShip_Images/5.png" alt="">
+      <img src="BattleShip_Images/6.png" alt="">
+      <img src="BattleShip_Images/7.png" alt="">
+
+      <img src="BattleShip_Images/8.png" alt="">
+      <img src="BattleShip_Images/9.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header3">Efficiency Through Data Structures:</h2>
+      <p style="font-size: larger;"><br><br>
+      To solve the issues of efficiently accessing the cell with the best probability and updating the grid, I relied on data structures
+      
+        <br><br>
+      </p>
+      
+      <img src="BattleShip_Images/10.png" alt="">
+      <img src="BattleShip_Images/11.png" alt="">
+      <img src="BattleShip_Images/12.png" alt="">
+      <img src="BattleShip_Images/13.png" alt="">
+      <img src="BattleShip_Images/14.png" alt="">
+      <img src="BattleShip_Images/15.png" alt="">
+      <img src="BattleShip_Images/16.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header4">Risk: A Second Dimension</h2>
+      <p style="font-size: larger;"><br><br>
+        A second dimension
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/17.png" alt="">
+      <img src="BattleShip_Images/18.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header5">The Bot's Brain:</h2>
+      <p style="font-size: larger;"><br><br>
+        The stack...
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/19.png" alt="">
+      <img src="BattleShip_Images/20.png" alt="">
+
+    </div>
+
+    <div id="expandableContFooter">
+
+      <a href="#!" id="close" class="project-item">Close</a>
+
+      <a href="#header0" id="aref" style="padding-top: 10px; text-decoration: none;">Top</a>
+
+    </div>
+
+
+  </div>
+
+  <!--Website Builder Expandable Content
+  <div id="websiteBldrExpandable">
+    
+    <div id="expandableContent">
+
+      <h1 id="header0"><br>Website Builder</h1>
+      <p>Battleship is a classic strategy game where players take turns guessing the locations of their opponent's ships on a grid. 
+        The goal is to sink all of the enemy's ships before they sink yours. With a combination of logic, deduction, and chance, each turn brings you closer to victory—or defeat!
+      </p>
+
+      <h2><br>Key points:</h2>
+      
+
+      <ul style="padding-left: 60px;">
+        <li>
+          <a id="aref" href="#header1">Forward-looking Development</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header2">The Bot: An Introduction</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header3">Efficiency Through Data Structures</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header4">Risk: A Second Dimension</a>
+        </li>
+
+        <br>
+
+        <li>
+          <a id="aref" href="#header6">The Bot's Brain</a>
+        </li>
+
+      </ul>
+
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header1">Forward-Looking Development</h2>
+      <p style="font-size: larger;"><br><br>
+      ...
+        <br><br>
+      </p>
+      
+      <img src="BattleShip_Images/1.png" alt="">
+      <img src="BattleShip_Images/2.png" alt="">
+      <img src="BattleShip_Images/3.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header2">The Bot: Introduction</h2>
+      <p style="font-size: larger;"><br><br>
+      ...
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/4.png" alt="">
+      <img src="BattleShip_Images/5.png" alt="">
+      <img src="BattleShip_Images/6.png" alt="">
+      <img src="BattleShip_Images/7.png" alt="">
+
+      <img src="BattleShip_Images/8.png" alt="">
+      <img src="BattleShip_Images/9.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header3">Efficiency Through Data Structures:</h2>
+      <p style="font-size: larger;"><br><br>
+      To solve the issues of efficiently accessing the cell with the best probability and updating the grid, I relied on data structures
+      
+        <br><br>
+      </p>
+      
+      <img src="BattleShip_Images/10.png" alt="">
+      <img src="BattleShip_Images/11.png" alt="">
+      <img src="BattleShip_Images/12.png" alt="">
+      <img src="BattleShip_Images/13.png" alt="">
+      <img src="BattleShip_Images/14.png" alt="">
+      <img src="BattleShip_Images/15.png" alt="">
+      <img src="BattleShip_Images/16.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header4">Risk: A Second Dimension</h2>
+      <p style="font-size: larger;"><br><br>
+        A second dimension
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/17.png" alt="">
+      <img src="BattleShip_Images/18.png" alt="">
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+      <h2 id="header5">The Bot's Brain:</h2>
+      <p style="font-size: larger;"><br><br>
+        The stack...
+        <br><br>
+      </p>
+
+      <img src="BattleShip_Images/19.png" alt="">
+      <img src="BattleShip_Images/20.png" alt="">
+
+    </div>
+
+    <div id="expandableContFooter">
+
+      <a href="#!" id="close" class="project-item">Close</a>
+
+      <a href="#header0" id="aref" style="padding-top: 10px; text-decoration: none;">Top</a>
+
+    </div>
+
+
+  </div>
+  -->
+
+  <!--Website Builder Expandable Content-->
+  <div id="clumsyThiefExpandable">
+    
+    <div id="expandableContent" style="height: 100%;">
+
+      <h1 id="header0"><br>Clumsy Thief</h1>
+      <p style="line-height: 25px;">
+        One of the most challenging projects I have ever attempted.
+        <br><br>
+        After dozens of failed unfinished games, I decided to finally follow a more professional and systemetic approach
+        to developing this project.
+        <br><br>
+        Unlike previous projects I'd done, this time around:
+
+        <ul style="padding-left: 60px; line-height: 35px;">
+
+          <li>I researched A LOT about <b>good software engineering practices</b> (even read an entire book by Robert Nystrom called 
+          Game Design Patterns) and learned and implemented various new concepts, such as:
+          </li>
+          <ul style="padding-left: 40px; line-height: 35px;">
+            <li><b>Abstraction</b></li>
+            <li><b>Modularization</b></li>
+            <li><b>Design Patterns</b></li>
+            <li><b>Optimization Patterns</b></li>
+          </ul>
+
+          <li>I studied and implemented various data structures and algorithms both for efficiency reasons and in preparation for upcoming semester:</li>
+          <ul style="padding-left: 40px; line-height: 35px;">
+
+              <li><b>Heaps</b> for storing the security camera's detected threats by priority</li>
+              <li><b>QuickSort</b> was used to sort pickable items by distance and how centered they were in player camera's viewport</li>
+              <li><b>A* algorithm</b> for calculating the path of a Rumba that cleans the room</li>
+              <li>etc...</li>
+
+          </ul>
+
+          <li>I learned how to <b>test</b> and <b>optimize</b> the performance of my algorithms and systems as well as their correctness.</li>
+          
+          <li>I learned to <b>thoroughly read documentations</b> and understand how functions in Unity libraries actaully worked and 
+          how they would impact both the performance and correctness of my code.</li>
+
+        </ul>
+
+        <br><br>
+
+        <br>
+
+        <a href="https://ayoub-nasr.itch.io/tiny-thieves">Visit Game Page on Itch.io</a>
+
+
+      </p>
+
+
+      <div class="divider_H">
+        <p><br></p>
+      </div>
+
+    </div>
+
+    <div id="expandableContFooter">
+
+      <a href="#!" id="close" class="project-item">Close</a>
+
+      <a href="#header0" id="aref" style="padding-top: 10px; text-decoration: none;">Top</a>
+
+    </div>
+
+
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Ayoub Nasr | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
