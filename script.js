@@ -13,3 +13,14 @@ document.querySelectorAll('a[href^="#"]:not(.project-item)').forEach(anchor => {
     }
   });
 });
+
+
+fetch('https://formsubmit.co/ayoubnasrsmain@gmail.com', {
+  method: 'POST',
+  body: JSON.stringify({
+      page: window.location.href,
+      referrer: document.referrer,
+      userAgent: navigator.userAgent,
+  }),
+  headers: { 'Content-Type': 'application/json' },
+});
