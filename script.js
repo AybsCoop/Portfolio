@@ -17,10 +17,22 @@ document.querySelectorAll('a[href^="#"]:not(.project-item)').forEach(anchor => {
 
 fetch('https://formsubmit.co/ayoubnasrsmain@gmail.com', {
   method: 'POST',
+  headers: {
+      'Content-Type': 'application/json',
+  },
   body: JSON.stringify({
+      name: "Visitor Name",
+      email: "visitor@example.com",
       page: window.location.href,
       referrer: document.referrer,
-      userAgent: navigator.userAgent,
   }),
-  headers: { 'Content-Type': 'application/json' },
-});
+})
+  .then(response => {
+      if (response.ok) {
+          console.log('Data sent successfully!');
+      } else {
+          console.error('Error sending data.');
+      }
+  })
+  .catch(error => console.error('Fetch error:', error));
+
